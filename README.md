@@ -36,7 +36,7 @@ The thingBot-15.4 is based on TI's CC2650 SoC (System on Chip), featuring an ARM
   * SPI, I2C
   * 3 ADCs
   * On-board RESET and USER button
-  * On-board Sensors (Temperature, Humidity, Ambient Light)
+  * On-board Sensors (Temperature & Humidity, Ambient Light)
   
 ## Getting Started with Contiki for TI CC26xx
 
@@ -120,5 +120,5 @@ The `PORT` argument could be used to specify in which port the device is connect
 The thingBot-15.4 is maintained by thingTronics Innovations.
 
 Main contributor:
- * Lovelesh Patel @<lovelesh.patel@thingtronics.com>
- * Vishnu Sherikar @<vishnu.sherikar@thingtronics.com>
+* Vishnu Sherikar @<vishnu.sherikar@thingtronics.com>
+* Lovelesh Patel @<lovelesh.patel@thingtronics.com>
