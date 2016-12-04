@@ -1,6 +1,10 @@
-update=11/24/16 23:28:39
+update=12/04/16 18:59:42
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -25,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=../../kicad-library/library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +60,13 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=cc2650_7x7
+LibName31=edge_sma
+LibName32=JTAG
+LibName33=xbee
+LibName34=tps782
+LibName35=tps63051
+LibName36=si7006
+LibName37=ltr-303als
+LibName38=2450BM14G0011
+LibName39=crystal_24MHz
