@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:CC2650_with_Discrete-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -33,13 +32,14 @@ LIBS:inductor_L
 LIBS:xbee
 LIBS:si7006
 LIBS:ltr-303als
-LIBS:sma_10v21_tgg
 LIBS:crystal_24MHz
 LIBS:inductor
 LIBS:tps63051
 LIBS:tps782
-LIBS:cc2650_7x7
 LIBS:JTAG
+LIBS:cc2650_7x7
+LIBS:antenna_2.4GHz
+LIBS:edge_sma
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -710,17 +710,6 @@ F 3 "" H 1650 6625 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SMA_10V21_TGG J1
-U 1 1 58331F13
-P 10075 4550
-F 0 "J1" H 10125 4400 60  0000 C CNN
-F 1 "SMA_EDGE_CONNECTOR" H 10075 4750 60  0000 C CNN
-F 2 "" H 10075 4550 60  0001 C CNN
-F 3 "" H 10075 4550 60  0001 C CNN
-	1    10075 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Si7006 U4
 U 1 1 5835C02D
 P 5025 9600
@@ -754,17 +743,6 @@ Text GLabel 2700 5675 0    39   Input ~ 0
 DIO_1
 Text GLabel 4300 4725 1    39   Input ~ 0
 INTR
-$Comp
-L CONN_02X03 P1
-U 1 1 5845B71F
-P 7575 9800
-F 0 "P1" H 7575 10000 50  0000 C CNN
-F 1 "CONN_02X03" H 7575 9600 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x03" H 7575 8600 50  0001 C CNN
-F 3 "" H 7575 8600 50  0000 C CNN
-	1    7575 9800
-	1    0    0    -1  
-$EndComp
 Text GLabel 7200 9700 0    39   Input ~ 0
 DIO_1
 Text Notes 6925 10375 0    59   ~ 0
@@ -2028,4 +2006,34 @@ Wire Wire Line
 	8050 5375 8050 5425
 Wire Wire Line
 	8950 5425 8950 5375
+$Comp
+L CONN_02X04 P1
+U 1 1 5844BD1F
+P 7575 9750
+F 0 "P1" H 7575 10000 50  0000 C CNN
+F 1 "CONN_02X04" H 7575 9500 50  0000 C CNN
+F 2 "" H 7575 8550 50  0000 C CNN
+F 3 "" H 7575 8550 50  0000 C CNN
+	1    7575 9750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 9600 0    39   Input ~ 0
+VDDS
+Wire Wire Line
+	7200 9600 7325 9600
+$Comp
+L EDGE_SMA U5
+U 1 1 5845D8F7
+P 10075 4550
+F 0 "U5" H 10125 4400 60  0000 C CNN
+F 1 "EDGE_SMA" H 10075 4750 60  0000 C CNN
+F 2 "" H 10075 4550 60  0001 C CNN
+F 3 "" H 10075 4550 60  0001 C CNN
+	1    10075 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7950 9600 2    39   Input ~ 0
+DIO_0
+Wire Wire Line
+	7950 9600 7825 9600
 $EndSCHEMATC
