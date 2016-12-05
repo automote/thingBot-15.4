@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:CC2650_with_balun-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -740,7 +741,7 @@ Peripheral Section
 Text Notes 8450 9325 0    79   ~ 16
 Connector Section
 $Comp
-L XBEE P3
+L XBEE-RESCUE-CC2650_with_balun P3
 U 1 1 583976FC
 P 14200 8900
 F 0 "P3" H 14250 8850 60  0000 C CNN

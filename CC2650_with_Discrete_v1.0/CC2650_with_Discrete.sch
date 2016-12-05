@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:CC2650_with_Discrete-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -40,6 +41,7 @@ LIBS:JTAG
 LIBS:cc2650_7x7
 LIBS:antenna_2.4GHz
 LIBS:edge_sma
+LIBS:CC2650_with_Discrete-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -774,7 +776,7 @@ Peripheral Section
 Text Notes 8450 9325 0    79   ~ 16
 Connector Section
 $Comp
-L XBEE P3
+L XBEE-RESCUE-CC2650_with_Discrete P3
 U 1 1 583976FC
 P 14200 8900
 F 0 "P3" H 14250 8850 60  0000 C CNN
