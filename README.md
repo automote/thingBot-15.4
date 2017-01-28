@@ -7,7 +7,7 @@ The thingBot-15.4 is based on TI's CC2650 SoC (System on Chip), featuring an ARM
   * Sleep Timer (underpins rtimers)
   * SysTick (underpins the platform clock and Contiki's timers infrastructure)
   * Deep Sleep support with RAM retention for ultra-low energy consumption
-  * Support for CC13xx prop mode: IEEE 802.15.4g-compliant sub-GHz (868 MHZ) operation
+  * 2.4-GHz RF Transceiver Compatible with Bluetooth Low Energy (BLE) 4.2 Specification and IEEE 802.15.4 PHY and MAC
   * UART
   * 2xSPI, I2C
   * Real-Time Clock (RTC)
@@ -29,6 +29,7 @@ The thingBot-15.4 is based on TI's CC2650 SoC (System on Chip), featuring an ARM
 ## Platform Features
 
   * [XBee Compatible](https://www.sparkfun.com/datasheets/Wireless/Zigbee/XBee-Dimensional.pdf)
+  * Compatible with Contiki OS
   * c-JTAG (10 pin Cortex-M connector)
   * On-board LEDs
   * 3.3V Vin
@@ -40,7 +41,7 @@ The thingBot-15.4 is based on TI's CC2650 SoC (System on Chip), featuring an ARM
   
 ## Getting Started with Contiki for TI CC26xx
 
-This guide's aim is to help you start using Contiki for TI's CC13xx.
+This guide's aim is to help you start using Contiki for TI's CC26xx.
 
 The CPU code can be found under `$(CONTIKI)/cpu/cc26xx-cc13xx`.
 The port was developed and tested with CC2650s and any bug reports are welcome.
