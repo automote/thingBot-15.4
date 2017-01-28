@@ -1,7 +1,7 @@
 # thingBot-15.4
 
 The thingBot-15.4 is based on TI's CC2650 SoC (System on Chip), featuring an ARM Cortex-M3 running at 32 MHz
- and with 28 kbytes of RAM and 128 kbytes of FLASH. It has the following key features:
+ and with 20 kbytes of RAM and 128 kbytes of FLASH. It has the following key features:
 
   * Standard Cortex-M3 peripherals (NVIC, SCB, SysTick)
   * Sleep Timer (underpins rtimers)
@@ -33,8 +33,7 @@ The thingBot-15.4 is based on TI's CC2650 SoC (System on Chip), featuring an ARM
   * c-JTAG (10 pin Cortex-M connector)
   * On-board LEDs
   * 3.3V Vin
-  * UART
-  * SPI, I2C
+  * UART, SPI, I2C
   * 3 ADCs
   * On-board RESET and USER button
   * On-board Sensors (Temperature & Humidity, Ambient Light)
